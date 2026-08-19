@@ -103,7 +103,97 @@
             color: #00e5ff;
         }
 
-        .card p {
+        .card p .descricao-planos {
+            color: #bbb;
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+
+        .planos {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .plano {
+            background: #151515;
+            border: 1px solid #333;
+            padding: 35px 25px;
+            border-radius: 15px;
+            width: 300px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .plano:hover {
+            transform: translateY(-8px);
+            border-color: #00e5ff;
+        }
+
+        .plano h3 {
+            color: #00e5ff;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .preco {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .preco span {
+            font-size: 14px;
+            color: #888;
+            font-weight: normal;
+        }
+
+        .plano ul {
+            list-style: none;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .plano li {
+            color: #bbb;
+            margin-bottom: 15px;
+        }
+
+        .plano li::before {
+            content: "✓";
+            color: #00e5ff;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .plano .botao {
+            margin-top: auto;
+        }
+
+        .destaque {
+            border: 2px solid #00e5ff;
+            transform: scale(1.03);
+        }
+
+        .destaque:hover {
+            transform: scale(1.03) translateY(-8px);
+        }
+
+        .mais-escolhido {
+            background: #00e5ff;
+            color: #000;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
             color: #bbb;
         }
 
